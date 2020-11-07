@@ -13,8 +13,24 @@ body {
     min-height: 100vh;
     background-color: rebeccapurple;
     color: white;
+    flex-direction: column;
 }
 
 h1, h2 {
     font-size: 300%;
+    margin: 3rem;
+    text-align: center;
+}
+
+.btn {
+    background-color: purple;
+    border-radius: 5px;
+    border: none;
+    margin: 0.5rem;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    width: 20rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
