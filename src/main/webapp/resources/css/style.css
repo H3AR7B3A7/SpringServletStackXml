@@ -14,12 +14,12 @@ body {
     background-color: rebeccapurple;
     color: white;
     flex-direction: column;
+    text-align: center;
 }
 
 h1, h2 {
     font-size: 300%;
     margin: 3rem;
-    text-align: center;
 }
 
 .btn {
