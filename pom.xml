@@ -55,6 +55,12 @@
       <version>${spring.version}</version>
     </dependency>
 
+    <!--  MongoDB  -->
+    <dependency>
+      <groupId>org.mongodb</groupId>
+      <artifactId>mongo-java-driver</artifactId>
+      <version>3.12.7</version>
+    </dependency>
     <!--  MySQL  -->
     <dependency>
       <groupId>mysql</groupId>
