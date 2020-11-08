@@ -8,7 +8,9 @@
 - Added static resource handling (css)
 - Added Internationalization (2 resource bundles)
 - Added a way to upload a file to the server
-  - We will maybe use a db to upload to later...
+  - We will maybe use a db to upload to later
   - The service for this can be easily switched out
 - Added an example of method validation on file name in 'FileUploadController'
-- Added a spring 'form:form' with validation through a model
+- Added a spring 'form:form' with validation using a model & BindingResult
+- Quick mongo implementation to show employees inserted by this form
+  - We will add proper dao for mongo and mySQL later
