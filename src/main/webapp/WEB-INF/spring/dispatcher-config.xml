@@ -36,8 +36,7 @@
         <property name="cacheSeconds" value="1"/>
     </bean>
 
-    <bean id="multipartResolver"
-          class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"/>
 
     <bean class="org.springframework.validation.beanvalidation.MethodValidationPostProcessor"/>
 
