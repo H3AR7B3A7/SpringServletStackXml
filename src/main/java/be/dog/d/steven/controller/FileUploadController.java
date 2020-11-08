@@ -25,6 +25,9 @@ public class FileUploadController {
     String uploadFileHandler(@RequestParam("name")
                              @Pattern(regexp = "^[a-zA-Z][a-zA-Z0-9]+$",
                                      message = "Not a suitable filename.") String name,
+                             // It is nice that we handle validation here, but fetching the message to our custom
+                             // error page will be very hard. We should use a model and spring form as shown in
+                             // the 'EmployeeForm' example instead... (Or something similar).
                              @RequestParam("file") MultipartFile file) {
 
         return UploadService.handleUpload(name, file);

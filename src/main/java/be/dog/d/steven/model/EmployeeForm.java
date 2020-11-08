@@ -13,7 +13,7 @@ public class EmployeeForm {
     @Size(min = 5,max = 100)
     @NotNull
     private String position;
-    @Email(message = "Must be a email format.")
+    @Email(message = "Must be a email format.") // Hardcoding messages while possible, is bad practice, see: 'errors'
     @NotEmpty
     private String email;
 
