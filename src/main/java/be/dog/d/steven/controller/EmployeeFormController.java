@@ -1,6 +1,7 @@
 package be.dog.d.steven.controller;
 
 import be.dog.d.steven.model.EmployeeForm;
+import be.dog.d.steven.service.MongoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -30,6 +31,10 @@ public class EmployeeFormController {
         if(bindingResult.hasErrors()){
             return "form";
         }
-        return "succes";
+
+        MongoService.insert(employeeForm);
+
+        return "redirect:employees";
     }
+
 }
