@@ -11,6 +11,10 @@
   - We will maybe use a db to upload to later
   - The service for this can be easily switched out
 - Added an example of method validation on file name in 'FileUploadController'
-- Added a spring 'form:form' with validation using a model & BindingResult
+- Added a Employee form (Spring form) with:
+  - Validation using a model & BindingResult
 - Quick mongo implementation to show employees inserted by this form
   - We will add proper dao for mongo and mySQL later
+- Added birth form with:
+  - A Custom validator
+  - Type conversions using PropertyEditorSupport (other option: Converter)
