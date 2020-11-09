@@ -44,4 +44,6 @@
         <property name="validationMessageSource" ref="messageSource"/>
     </bean>
 
+    <bean id="customValidator" class="be.dog.d.steven.util.CustomBirthValidator"/>
+
 </beans>

@@ -1,22 +1,34 @@
 package be.dog.d.steven.controller;
 
 import be.dog.d.steven.model.BirthForm;
+import be.dog.d.steven.service.DateEditor;
+import be.dog.d.steven.service.IdEditor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.validation.Validator;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Date;
 
 @Controller
 @RequestMapping("/birth")
 public class BirthFormController {
 
     @Autowired
-    private LocalValidatorFactoryBean validator;
+    @Qualifier("customValidator")
+    private Validator validator;
+
+    @InitBinder("birthForm")
+    public void initBinder(WebDataBinder binder){
+//        binder.setValidator(validator);
+        binder.registerCustomEditor(Integer.class, new IdEditor());
+        binder.registerCustomEditor(Date.class, new DateEditor());
+    }
 
     @GetMapping
     public String getBirthForm(Model model){
@@ -25,7 +37,7 @@ public class BirthFormController {
     }
 
     @PostMapping
-    public String submitBirthForm(Model model, @ModelAttribute("birthForm")BirthForm birthForm, BindingResult bindingResult){
+    public String submitBirthForm(Model model, @ModelAttribute("birthForm") @Validated BirthForm birthForm, BindingResult bindingResult){
         model.addAttribute("birthForm", birthForm);
         validator.validate(birthForm, bindingResult);
         if(bindingResult.hasErrors()){
