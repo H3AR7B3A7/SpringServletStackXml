@@ -23,4 +23,8 @@
     <input class="btn" type="submit" value="<spring:message code="empForm_button"/>">
 </form>
 
+<form action="birth" method="get">
+    <input class="btn" type="submit" value="<spring:message code="birthForm_button"/>">
+</form>
+
 </body>
