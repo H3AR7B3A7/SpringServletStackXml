@@ -1,8 +1,8 @@
 package be.dog.d.steven.controller;
 
 import be.dog.d.steven.model.BirthForm;
-import be.dog.d.steven.service.DateEditor;
-import be.dog.d.steven.service.IdEditor;
+import be.dog.d.steven.util.DateEditor;
+import be.dog.d.steven.util.IdEditor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;

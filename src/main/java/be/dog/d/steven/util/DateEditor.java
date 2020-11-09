@@ -1,4 +1,4 @@
-package be.dog.d.steven.service;
+package be.dog.d.steven.util;
 
 import java.beans.PropertyEditorSupport;
 import java.text.ParseException;
