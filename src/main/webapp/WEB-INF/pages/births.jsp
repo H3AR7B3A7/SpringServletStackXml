@@ -17,7 +17,7 @@
         <th class="bloc"><spring:message code="birthLocation_label"/></th>
     </tr>
 
-    ${DATA}
+<%--    ${DATA}--%>
 
 </table>
 
