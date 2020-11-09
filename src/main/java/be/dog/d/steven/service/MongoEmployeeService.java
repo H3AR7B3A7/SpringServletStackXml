@@ -7,7 +7,7 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
-public class MongoService {
+public class MongoEmployeeService {
 
     public static void insert(EmployeeForm employeeForm) {
         MongoClient mongoClient = MongoClients.create(System.getenv("DB_LOCATION"));
