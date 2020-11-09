@@ -1,7 +1,7 @@
 package be.dog.d.steven.controller;
 
 import be.dog.d.steven.model.EmployeeForm;
-import be.dog.d.steven.service.MongoService;
+import be.dog.d.steven.service.MongoEmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,20 +19,20 @@ public class EmployeeFormController {
     private LocalValidatorFactoryBean validator;
 
     @GetMapping
-    public String getForm(Model model){
+    public String getEmpForm(Model model){
         model.addAttribute("employeeForm", new EmployeeForm());
-        return "form";
+        return "empForm";
     }
 
     @PostMapping
-    public String submitForm(Model model, @ModelAttribute("employeeForm")EmployeeForm employeeForm, BindingResult bindingResult){
+    public String submitEmpForm(Model model, @ModelAttribute("employeeForm")EmployeeForm employeeForm, BindingResult bindingResult){
         model.addAttribute("employeeForm", employeeForm);
         validator.validate(employeeForm, bindingResult);
         if(bindingResult.hasErrors()){
-            return "form";
+            return "empForm";
         }
 
-        MongoService.insert(employeeForm);
+        MongoEmployeeService.insert(employeeForm);
 
         return "redirect:employees";
     }
