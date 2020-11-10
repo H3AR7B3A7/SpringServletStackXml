@@ -17,7 +17,8 @@
   - We will add proper dao for mongo and mySQL later
 - Added birth form with:
   - A Custom validator
-  - Type conversions using PropertyEditorSupport (other option: Converter)
+  - Type conversions using PropertyEditorSupport  
+  (For other option: Converter, see [this](https://stackoverflow.com/questions/12544479/spring-mvc-type-conversion-propertyeditor-or-converter))
 
 ## Validation
 <img width="500" src="https://raw.githubusercontent.com/H3AR7B3A7/SpringServletStackXml/master/validation.png" alt="fc"><br>
