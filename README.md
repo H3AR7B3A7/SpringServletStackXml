@@ -18,3 +18,6 @@
 - Added birth form with:
   - A Custom validator
   - Type conversions using PropertyEditorSupport (other option: Converter)
+
+## Validation
+<img width="500" src="https://raw.githubusercontent.com/H3AR7B3A7/SpringServletStackXml/master/validation.png" alt="fc"><br>
