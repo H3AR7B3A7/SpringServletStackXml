@@ -9,6 +9,7 @@
 - Added Internationalization (2 resource bundles)
 - Added a way to upload a file to the server
   - We will maybe use a db to upload to later
+  (We already know how to implement databases properly from previous projects)
   - The service for this can be easily switched out
 - Added an example of method validation on file name in 'FileUploadController'
 - Added a Employee form (Spring form) with:
@@ -19,6 +20,8 @@
   - A Custom validator
   - Type conversions using PropertyEditorSupport  
   (For other option: Converter, see [this](https://stackoverflow.com/questions/12544479/spring-mvc-type-conversion-propertyeditor-or-converter))
+- Using multiple contexts (Added 'my-beans')
+- Comparing scopes: request / session (we did something similar for 'singleton' and 'session' in a previous project)
 
 ## Validation
 <img width="500" src="https://raw.githubusercontent.com/H3AR7B3A7/SpringServletStackXml/master/validation.png" alt="fc"><br>
