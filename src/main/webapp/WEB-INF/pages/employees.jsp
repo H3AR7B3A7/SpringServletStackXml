@@ -10,10 +10,10 @@
 
 <table>
     <tr>
-        <th class="first"><spring:message code="name_label"/></th>
-        <th class="last"><spring:message code="last_label"/></th>
-        <th class="position"><spring:message code="pos_label"/></th>
-        <th class="email"><spring:message code="mail_label"/></th>
+        <th><spring:message code="name_label"/></th>
+        <th><spring:message code="last_label"/></th>
+        <th><spring:message code="pos_label"/></th>
+        <th><spring:message code="mail_label"/></th>
     </tr>
 
     ${DATA}

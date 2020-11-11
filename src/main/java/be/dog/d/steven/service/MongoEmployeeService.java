@@ -32,13 +32,13 @@ public class MongoEmployeeService {
 
         for (Document doc : collection.find()) {
             sb
-                    .append("<tr><td class='first'>")
+                    .append("<tr><td>")
                     .append(doc.get("first").toString())
-                    .append("</td><td class='last'>")
+                    .append("</td><td>")
                     .append(doc.get("last").toString())
-                    .append("</td><td class='position'>")
+                    .append("</td><td>")
                     .append(doc.get("position").toString())
-                    .append("</td><td class='email'>")
+                    .append("</td><td>")
                     .append(doc.get("email").toString())
                     .append("</td></tr>");
         }
