@@ -35,7 +35,7 @@ h1, h2 {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-.first, .last, .position, .email, .bday, .bloc {
+th, td {
     text-align: center;
     padding-left: 1rem;
     padding-right: 1rem;

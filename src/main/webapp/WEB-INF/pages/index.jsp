@@ -27,4 +27,8 @@
     <input class="btn" type="submit" value="<spring:message code="birthForm_button"/>">
 </form>
 
+<form action="salgrade1" method="get">
+    <input class="btn" type="submit" value="Redirect">
+</form>
+
 </body>
