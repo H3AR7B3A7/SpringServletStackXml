@@ -22,6 +22,9 @@
   (For other option: Converter, see [this](https://stackoverflow.com/questions/12544479/spring-mvc-type-conversion-propertyeditor-or-converter))
 - Using multiple contexts (Added 'my-beans')
 - Comparing scopes: request / session (we did something similar for 'singleton' and 'session' in a previous project)
+- Page redirection with flash attributes, comparing 'old' and 'new'
+  - With RedirectView
+  - With ModelAndView
 
 ## Validation
 <img width="500" src="https://raw.githubusercontent.com/H3AR7B3A7/SpringServletStackXml/master/validation.png" alt="fc"><br>
