@@ -31,4 +31,12 @@
     <input class="btn" type="submit" value="Redirect">
 </form>
 
+<form action="old_login" method="get">
+    <input class="btn" type="submit" value="Flash Attributes Old">
+</form>
+
+<form action="new_login" method="get">
+    <input class="btn" type="submit" value="Flash Attributes New">
+</form>
+
 </body>
